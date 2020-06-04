@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithom", "Algorithom\Algorithom.csproj", "{6753E64D-F4DF-4E00-96A7-9B8977A99470}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6753E64D-F4DF-4E00-96A7-9B8977A99470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6753E64D-F4DF-4E00-96A7-9B8977A99470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6753E64D-F4DF-4E00-96A7-9B8977A99470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6753E64D-F4DF-4E00-96A7-9B8977A99470}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2581A576-566D-440E-9E90-D9C2F6E605D2}
+	EndGlobalSection
+EndGlobal
