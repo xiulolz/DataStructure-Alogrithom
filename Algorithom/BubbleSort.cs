@@ -38,7 +38,6 @@ namespace Algorithom
                     }
                 }
             }
-
             return list;
         }
     }
