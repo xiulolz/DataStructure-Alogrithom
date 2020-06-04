@@ -25,7 +25,6 @@ namespace Algorithom
             //      for i from 0 to n-2 
             //          if i'th and i+1'th elements out of ordrer
             //              swap them
-
             for (int i = 0; i < list.Count; i++)
             {
                 for (int j = 0; j < list.Count - 1; j++)
