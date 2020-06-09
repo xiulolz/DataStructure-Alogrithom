@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6753E64D-F4DF-4E00-96A7-9B8977A99470}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Algorithom</RootNamespace>
-    <AssemblyName>Algorithom</AssemblyName>
+    <ProjectGuid>{FB0C010C-C1F2-4402-8ECF-C7E87A8BE61A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataStrcture</RootNamespace>
+    <AssemblyName>DataStrcture</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,22 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinarySearch.cs" />
-    <Compile Include="BubbleSort.cs" />
-    <Compile Include="InsertionSort.cs" />
-    <Compile Include="MainCaller.cs" />
-    <Compile Include="MergeSort.cs" />
+    <Compile Include="LinkedList\CircularLinkedList.cs" />
+    <Compile Include="LinkedList\LinkedList.cs" />
+    <Compile Include="LinkedList\POCO\Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SelectionSort.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DataStrcture\DataStrcture.csproj">
-      <Project>{fb0c010c-c1f2-4402-8ecf-c7e87a8be61a}</Project>
-      <Name>DataStrcture</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
