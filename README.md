@@ -11,4 +11,9 @@
 # DataStructure
 * LinkedList
     * [Linear LinkedList](../master/DataStrcture/LinkedList/LinkedList.cs)
-    * [Circular LinkedList ](../master/DataStrcture/LinkedList/CircularLinkedList.cs)
+    * [Circular LinkedList](../master/DataStrcture/LinkedList/CircularLinkedList.cs)
+    * [Doubly LinkedList](../master/DataStrcture/LinkedList/DoublyLinkedList.cs)
+* Queue
+    * [Queue](../master/DataStrcture/Queue/Queue.cs)
+*Stack
+    * [Stack](../master/DataStrcture/Stack/Stack.cs)
