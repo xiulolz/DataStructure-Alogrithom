@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 namespace DataStrcture.LinkedList
 {
     /// <summary>
-    /// 環狀 Linked List
+    /// 環狀 LinkedList
     /// </summary>
     public class CircularLinkedList : LinkedList
     {
+        // HACK 還未實作RemoveAt
         public CircularLinkedList() : base(){ }
         
         /// <summary>
@@ -44,7 +45,7 @@ namespace DataStrcture.LinkedList
         {
             if (target == default)
             {
-                return First;
+                return default;
             }
 
             // 存下previous的原因是 

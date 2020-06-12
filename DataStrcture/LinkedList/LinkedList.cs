@@ -46,6 +46,10 @@ namespace DataStrcture.LinkedList
         {
             Node result = new Node() { Value = value };
 
+            // 效率比較
+            // iterative 40175ms
+            // two pointer 9ms
+
             // Iterative O(n) 
             //var current = First;
             //if (First == default)
@@ -90,7 +94,7 @@ namespace DataStrcture.LinkedList
         {
             if (target == default)
             {
-                return First;
+                return default;
             }
 
             // 存下previous的原因是 
@@ -127,11 +131,11 @@ namespace DataStrcture.LinkedList
         /// </summary>
         /// <param name="target">要插入的目標</param>
         /// <param name="value">值</param>
-        public Node InsertAfter(Node target, int value)
+        public virtual Node InsertAfter(Node target, int value)
         {
             if (target == default)
             {
-                return First;
+                return default;
             }
 
             var current = First;
@@ -168,7 +172,7 @@ namespace DataStrcture.LinkedList
         /// 刪除指定Node
         /// </summary>
         /// <param name="target">指定要刪除的目標</param>
-        public void RemoveAt(Node target)
+        public virtual void RemoveAt(Node target)
         {
             if (target == default)
             {

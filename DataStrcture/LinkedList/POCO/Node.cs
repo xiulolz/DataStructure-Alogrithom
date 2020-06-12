@@ -25,5 +25,10 @@ namespace DataStrcture.LinkedList
         /// 指標，指向下一個資料位址
         /// </summary>
         public Node Next { set; get; }
+
+        /// <summary>
+        /// 指標，指向前一個資料位址
+        /// </summary>
+        public Node Previous { set; get; }
     }
 }

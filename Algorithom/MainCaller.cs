@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using DataStrcture.LinkedList;
+using DataStrcture.Queue;
+using DataStrcture.Stack;
 
 namespace Algorithom
 {
@@ -16,93 +18,7 @@ namespace Algorithom
     {
         static void Main(string[] args)
         {
-            //var rndList = GetRandomList(10);
 
-            //// binary search
-            //int targetIndex = BinarySearch.DoAlgorithom(new List<int> { 1, 2, 3, 4, 5, 6, 7 }, 1);
-            //if (targetIndex.Equals(default))
-            //{
-            //    Console.WriteLine("找無此元素");
-            //}
-            //else
-            //{
-            //    Console.WriteLine($"目標index:{targetIndex}");
-            //}
-
-            //// selection sort 
-            //Func<List<int>> selectionSort = () =>
-            //{
-            //    var result = SelectionSort.DoAlgorithom(rndList);
-            //    return result;
-            //};
-            //var watchSelection = StopWatcher(selectionSort);
-            //Console.WriteLine(watchSelection.Ms);
-
-            //// insertion sort
-            //Func<List<int>> insertionSort = () =>
-            //{
-            //    var result = InsertionSort.DoAlgorithm(rndList);
-            //    return result;
-            //};
-            //var watchInsertion = StopWatcher(insertionSort);
-            //Console.WriteLine(watchInsertion.Ms);
-
-            //var a = BubbleSort.DoAlgorithom(rndList);
-            //foreach (var item in a)
-            //{
-            //    Console.WriteLine(item);
-            //}
-
-            //LinkedList linkedList = new LinkedList();
-            //linkedList.Append(1);
-            //linkedList.Append(2);
-            //linkedList.Append(3);
-            //var target = linkedList.Append(4);
-            //linkedList.RemoveAt(target);
-            //var insert5 = linkedList.InsertBefore(target, 5);
-            //linkedList.RemoveAt(insert5);
-
-            //LinkedList linkedList2 = new LinkedList();
-            //linkedList2.Append(5);
-            //linkedList2.Append(6);
-            //linkedList.Concat(linkedList2);
-
-            //var current = linkedList.First;
-            //while (current != default)
-            //{
-            //    Console.WriteLine(current.Value);
-            //    current = current.Next;
-            //}
-
-            //// 效率比較
-            //// iterative 40175ms
-            //// two pointer 9ms
-            //Func<List<LinkedList>> func = () =>
-            //{
-            //    List<LinkedList> r = new List<LinkedList>();
-            //    for (int i = 0; i < 100000; i++)
-            //    {
-            //        linkedList.Append(i);
-            //    }
-            //    r.Add(linkedList);
-            //    return r;
-            //};
-            //var a = StopWatcher(func);
-            //Console.WriteLine(a.Ms);
-
-            CircularLinkedList circular = new CircularLinkedList();
-            CircularLinkedList circular2 = new CircularLinkedList();
-            circular.Append(1);
-            circular.Append(2);
-            circular.Append(3);
-            var target = circular.Append(4);
-            circular2.Append(5);
-            circular2.Append(6);
-            circular.Concat(circular2);
-
-
-
-            Console.ReadLine(); 
         }
 
         /// <summary>
