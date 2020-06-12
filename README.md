@@ -15,5 +15,5 @@
     * [Doubly LinkedList](../master/DataStrcture/LinkedList/DoublyLinkedList.cs)
 * Queue
     * [Queue](../master/DataStrcture/Queue/Queue.cs)
-*Stack
+* Stack
     * [Stack](../master/DataStrcture/Stack/Stack.cs)
