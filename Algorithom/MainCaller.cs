@@ -10,15 +10,17 @@ using System.Threading;
 using System.Threading.Tasks;
 using DataStrcture.LinkedList;
 using DataStrcture.Queue;
+using DataStrcture.Recursion;
 using DataStrcture.Stack;
 
 namespace Algorithom
 {
     class MainCaller
     {
+        
         static void Main(string[] args)
         {
-
+            Console.Read();
         }
 
         /// <summary>
