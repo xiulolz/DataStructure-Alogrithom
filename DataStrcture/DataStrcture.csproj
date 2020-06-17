@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Graph\UndirectedAdjacenyList.cs" />
     <Compile Include="LinkedList\CircularLinkedList.cs" />
     <Compile Include="LinkedList\DoublyLinkedList.cs" />
     <Compile Include="LinkedList\LinkedList.cs" />
@@ -50,7 +51,7 @@
     <Compile Include="Recursion\AckermanFunction.cs" />
     <Compile Include="Recursion\BinomialCoefficient.cs" />
     <Compile Include="Recursion\Fibonacci.cs" />
-    <Compile Include="Recursion\HanoiTower.cs" />
+    <Compile Include="Recursion\HanoiOfTower.cs" />
     <Compile Include="Stack\Stack.cs" />
   </ItemGroup>
   <ItemGroup />

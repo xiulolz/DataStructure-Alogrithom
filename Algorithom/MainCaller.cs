@@ -8,6 +8,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using DataStrcture.Graph;
 using DataStrcture.LinkedList;
 using DataStrcture.Queue;
 using DataStrcture.Recursion;
@@ -17,9 +18,41 @@ namespace Algorithom
 {
     class MainCaller
     {
-        
         static void Main(string[] args)
         {
+            // TODO 整理到notion筆記
+            // TODO 整理readme.md
+            // TODO Merge Sort還未實作
+            UndirectedAdjacenyList graph = new UndirectedAdjacenyList();
+            
+            //https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs1.png
+            graph.AddEdge(1, 2);
+            graph.AddEdge(1, 3);
+
+            graph.AddEdge(2, 4);
+            graph.AddEdge(2, 5);
+            graph.AddEdge(2, 1);
+
+            graph.AddEdge(3, 1);
+            graph.AddEdge(3, 5);
+
+            graph.AddEdge(4, 2);
+            graph.AddEdge(4, 5);
+            graph.AddEdge(4, 6);
+
+            graph.AddEdge(5, 3);
+            graph.AddEdge(5, 2);
+            graph.AddEdge(5, 4);
+            graph.AddEdge(5, 6);
+            
+            graph.AddEdge(6, 4);
+            graph.AddEdge(6, 5);
+
+            var path = graph.Bfs(1, 6);
+            foreach (var vertice in path)
+            {
+                Console.WriteLine(vertice);
+            }
             Console.Read();
         }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStrcture.Recursion
 {
-    public class HanoiTower
+    public class HanoiOfTower
     {
         /// <summary>
         /// 遞迴解河內塔
