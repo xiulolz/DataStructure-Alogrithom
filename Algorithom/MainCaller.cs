@@ -25,7 +25,10 @@ namespace Algorithom
             // TODO Merge Sort還未實作
             UndirectedAdjacenyList graph = new UndirectedAdjacenyList();
             
+            // bfs graph
             //https://media.geeksforgeeks.org/wp-content/cdn-uploads/bfs1.png
+
+            // dfs
             graph.AddEdge(1, 2);
             graph.AddEdge(1, 3);
 
@@ -35,21 +38,28 @@ namespace Algorithom
 
             graph.AddEdge(3, 1);
             graph.AddEdge(3, 5);
+            graph.AddEdge(3, 7);
+            graph.AddEdge(3, 6);
 
             graph.AddEdge(4, 2);
-            graph.AddEdge(4, 5);
-            graph.AddEdge(4, 6);
+            graph.AddEdge(4, 8);
 
             graph.AddEdge(5, 3);
             graph.AddEdge(5, 2);
-            graph.AddEdge(5, 4);
-            graph.AddEdge(5, 6);
             
-            graph.AddEdge(6, 4);
-            graph.AddEdge(6, 5);
+            graph.AddEdge(6, 3);
 
-            var path = graph.Bfs(1, 6);
-            foreach (var vertice in path)
+            graph.AddEdge(7, 3);
+
+            graph.AddEdge(8, 4);
+
+            //var path = graph.Bfs(1, 8);
+            //foreach (var vertice in path)
+            //{
+            //    Console.WriteLine(vertice);
+            //}
+            var p = graph.Dfs(1, 8);
+            foreach (var vertice in p)
             {
                 Console.WriteLine(vertice);
             }
